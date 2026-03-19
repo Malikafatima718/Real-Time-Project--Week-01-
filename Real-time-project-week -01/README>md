@@ -1,0 +1,279 @@
+# Real-Time-Project--Week-01
+# Style.CSS
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.form-container {
+    margin: 50px auto;
+    width: 300px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.card {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+}
+
+# 1:-Home page/Login page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>New user? <a href="register.html">Register</a></p>
+</div>
+
+</body>
+</html>
+
+# 2:-Registration page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register</h2>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Phone">
+    <input type="email" placeholder="Email">
+
+    <select>
+        <option>Admin</option>
+        <option>Electrician</option>
+    </select>
+
+    <input type="password" placeholder="Password">
+    <button>Register</button>
+</div>
+
+</body>
+</html>
+
+# 3:-Dashboard
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="electricians.html">Electricians</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="tasks.html">Tasks</a>
+</nav>
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+    <div class="card">10 Electricians</div>
+    <div class="card">5 Jobs</div>
+    <div class="card">8 Tasks</div>
+    <div class="card">20 Completed</div>
+</div>
+
+</body>
+</html>
+
+# 4:-Electrician management
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricians</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+</nav>
+
+<h2>Electricians</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Neha</td>
+        <td>9876543210</td>
+        <td>Active</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# 5:-Job management
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricians</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+</nav>
+
+<h2>Electricians</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Neha</td>
+        <td>9876543210</td>
+        <td>Active</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# 6:-Task tracking
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="tasks.html">Tasks</a>
+</nav>
+
+<h2>Task Tracking</h2>
+
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Install Switch Board</td>
+        <td>Amit</td>
+        <td>Pending</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# 7:-Materials page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materials</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="materials.html">Materials</a>
+</nav>
+
+<h2>Materials Usage</h2>
+
+<table>
+    <tr>
+        <th>Material</th>
+        <th>Quantity</th>
+        <th>Usage</th>
+    </tr>
+    <tr>
+        <td>Electric Wire</td>
+        <td>100m</td>
+        <td>Site A</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# 8:-Reports page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="reports.html">Reports</a>
+</nav>
+
+<h2>Reports</h2>
+
+<ul>
+    <li>Daily Work Report</li>
+    <li>Task Completion Report</li>
+    <li>Worker Activity Report</li>
+</ul>
+
+</body>
+</html>
+
+# 9:-Profile page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
